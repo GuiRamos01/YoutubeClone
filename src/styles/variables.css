@@ -1,0 +1,75 @@
+.colorOrange {
+    color: #FF7A00;
+}
+
+.colorRed {
+    color: #FF2626;
+}
+
+.colorWhite {
+    color: #fff;
+}
+
+.colorGrey {
+    color: #4D4D4D;
+}
+
+.colorGreyLow {
+    color: #999999;
+}
+
+.colorBlack {
+    color: #000;
+}
+
+.bgOrange {
+    background-color: #FF7A00;
+}
+
+.bgOrangeLow {
+    background-color: #ffd993;
+}
+
+button.bgOrange:hover {
+    background-color: #e86f00;
+}
+
+.bgRed {
+    background-color: #FF2626;
+}
+
+button.bgRed:hover {
+    background-color: #da1a1a;
+}
+
+.bgGrey {
+    background-color: #4D4D4D;
+}
+
+.bgGreyLow {
+    background-color: #999999;
+}
+
+.bgGreyLow2 {
+    background-color: #D9D9D9;
+}
+
+.bgBlack {
+    background-color: #000;
+}
+
+button.bgBlack:hover {
+    background-color: #414141;
+}
+
+.bgGreen {
+    background-color: #2bb931;
+}
+
+.borderOrange {
+    border-color: #FF7A00 !important;
+}
+
+.borderRed {
+    border-color: #FF2626;
+}

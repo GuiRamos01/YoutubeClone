@@ -1,0 +1,211 @@
+#Navbar
+    .Container
+        width: -webkit-fill-available
+        display: flex
+        align-items: center
+        flex: 1
+        position: fixed
+        background-color: #fff
+        box-shadow: 0 1px 0 #d6e0ea
+        gap: 5px
+        padding: 14px 20px
+        z-index: 4
+
+    .Logo
+        display: flex
+        align-items: center
+        flex: 1
+    
+    img
+        height: 24px
+
+    .SearchModal
+        align-items: flex-start !important
+        transition: 0s
+        
+        .Container
+            background-color: #fff
+            padding: 15px
+            width: 100% !important
+            z-index: 2
+            position: relative
+            display: flex
+            flex-direction: column
+            flex: inherit
+
+            .Title 
+                font-size: 17px 
+                font-weight: 100 
+                margin-top: 0px 
+                margin-bottom: 12px 
+                display: flex
+                align-items: center
+
+            span
+                flex: 1
+
+            .exit
+                cursor: pointer
+
+            .Itens
+                display: flex
+                gap: 15px
+
+                .button
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    gap: 7px
+                    font-size: 14px
+                    cursor: pointer
+
+                    svg
+                        width: 39px
+
+        .fade
+            position: fixed
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            z-index: 1
+
+    .SearchModal.show
+        visibility: visible
+        opacity: 1
+
+    .User
+        display: flex
+        align-items: center
+
+        .UserMenu
+            display: flex
+
+            img
+                width: 33px
+                height: 33px
+                border-radius: 50%
+                margin-left: 10px
+                cursor: pointer
+                position: sticky
+                z-index: 110
+                background-color: #ccc
+
+            ul
+                z-index: 110
+                width: 226px
+                position: absolute
+                font-size: 15px
+                font-weight: 500
+                right: 15px
+                top: 42px
+                padding: 6px
+                background-color: #fff
+                border-radius: 10px
+                box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1)
+
+            li
+                display: flex
+                align-items: center
+                padding: 6px
+                border-radius: 11px
+                margin: 0
+                cursor: pointer
+                transition: 0.2s
+
+                svg
+                    font-size: 21px
+                    margin-right: 7px
+
+            .UserHeader
+                padding: 7px 7px
+                margin: 3px 0px
+                margin-bottom: 5px
+                font-size: 15px
+                border-radius: 10px
+                cursor: default
+                background-color: #e1e1e1
+
+                .Name
+                    font-size: 15px
+                    font-weight: 600
+
+                .User
+                    font-size: 13px
+                    font-weight: 200
+
+            li:hover
+                background-color: #e1e1e1
+
+            li::marker
+                font-size: 0
+
+        button
+            color: #0288D1
+            border: 1px solid #0288D1
+
+    .Wrapper
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        width: 100%
+    
+    .Search, .SearchMobile
+        width: 43%
+        background-color: #fff
+        margin: auto
+        display: flex
+        align-items: center
+        justify-content: flex-end
+
+        Input:focus
+            border: 1px solid #0288D1
+
+        Input
+            width: 100%
+            border: 1px solid #ccc
+            background-color: #fff
+            padding: 9px 13px
+            padding-right: 33px
+            font-weight: 500
+            border-radius: 20px
+            outline: none
+
+        button
+            position: fixed
+            margin-right: 8px
+            cursor: pointer
+            background: none
+            margin: 0
+            padding: 0
+
+        svg
+            margin-right: 10px
+            color: #4d4d4d
+
+    .SearchModal
+        form
+            width: 100%
+
+    button
+        background-color: #fff
+        color: #fff
+        border: none
+        border-radius: 20px
+        display: flex
+        align-items: center
+        padding: 6px 10px
+        padding-right: 12px
+        font-weight: 500
+        cursor: pointer
+
+        svg
+            font-size: 21px
+            margin-right: 5px
+
+    @media (max-width: 600px)
+        img
+            height: 26px
+
+        .Search
+            display: none

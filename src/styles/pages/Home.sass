@@ -1,0 +1,88 @@
+#Home
+    .Main
+        display: flex
+        flex: 7
+        padding-top: 80px
+        
+        .Container
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+
+    .Main2
+        display: flex
+        flex-direction: column
+        padding: 19px 16px
+        margin-left: 70px
+
+    .more
+        background-color: #FF7A00
+        color: #fff
+        border: none
+        border-radius: 50%
+        padding: 4px
+        font-size: 10px
+        margin-left: 7px
+        cursor: pointer
+        display: flex
+
+        svg
+            font-size: 14px
+
+    [data-tooltip]
+        justify-content: center
+
+    #Menu
+        .Home
+            color: #000
+
+    .TitleList
+        display: flex
+        cursor: default
+        font-size: 22px
+        font-weight: 500
+        margin-bottom: 15px
+
+        svg
+            margin-right: 7px
+
+    .WrapperCard
+        display: flex
+        position: relative
+        overflow-y: auto
+        gap: 13px
+
+    hr
+        margin-bottom: 15px
+
+    .WrapperGrid
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(271px, 1fr))
+        
+        #Card
+            margin: 0.5rem
+            
+            .Container
+                margin-bottom: 5px
+                overflow: hidden
+                width: auto
+                height: auto
+
+            .Thumbnail
+                width: 100%
+
+            .Thumb
+                width: auto
+
+
+    .skeleton 
+        .Thumbnail
+            height: 169px
+
+    @media (max-width: 600px)
+        .Main2
+            margin-left: 0px
+
+    @media (max-width: 400px)
+        .Main2 a
+            width: auto
