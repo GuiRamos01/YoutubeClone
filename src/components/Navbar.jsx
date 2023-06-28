@@ -7,6 +7,7 @@ const Navbar = () => {
     const hideSearch = event => {
         const Search = document.querySelector(".SearchModal");
         Search.classList.remove('show');
+        document.body.classList.remove('stop-scrolling');
     };  
     
     return (

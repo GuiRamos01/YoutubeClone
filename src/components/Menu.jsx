@@ -15,6 +15,7 @@ const IconTitle = styled.span`
 const showSearch = event => {
     const Search = document.querySelector(".SearchModal");
     Search.classList.add('show');
+    document.body.classList.add('stop-scrolling');
   };  
 
 const Menu = () => {
