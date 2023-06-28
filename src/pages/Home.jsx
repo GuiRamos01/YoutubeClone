@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import styled from "styled-components";
 import Footer from "../components/Footer";
 import List from "../components/List/ListGrid";
+import ListSlider from "../components/List/ListSlider";
 
 import dataList from "../data/videos";
 import { useEffect, useState } from "react";
@@ -38,6 +39,9 @@ const Home = () => {
         <Main>
           <Menu />
           <div className="Main2">
+            <ListSlider data={data} />
+            <hr />
+            
             <List data={data}/>
             <hr />
 

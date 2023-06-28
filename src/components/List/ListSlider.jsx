@@ -32,13 +32,6 @@ const ListSlider = ({ data }) => {
               initialSlide: 2
             }
           },
-          {
-            breakpoint: 700,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
         ]
       };
 
