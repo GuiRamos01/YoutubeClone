@@ -5,6 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
+import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
+
 const ListSlider = ({ data }) => {  
     const arr = [1,2,3,4,5,6];
 
@@ -15,6 +18,9 @@ const ListSlider = ({ data }) => {
         slidesToShow: 5,
         slidesToScroll: 1,
         initialSlide: 0,
+        nextArrow: <ArrowForwardIosRoundedIcon />,
+        prevArrow: <ArrowBackIosNewRoundedIcon />,
+
         responsive: [
           {
             breakpoint: 1500,
