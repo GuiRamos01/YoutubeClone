@@ -6,7 +6,7 @@ import TextOverflow from 'react-text-overflow';
 const Card = ({ title, photo, channel, channelURL, channelphoto }) => {    
     return (
         <aside id="Card">
-            <Link to="/watch/test">
+            <Link to="/watch">
                 <div className="Container">
                     <div className="Thumb">
                         <div className="Icons">
